@@ -1,0 +1,35 @@
+<div class="wrapper">
+<mat-card>
+  <h1>Neue Buchung</h1>
+    <form class="example-container" [formGroup]="options">
+      <mat-form-field
+        [hideRequiredMarker]="options.value.hideRequired"
+        [floatLabel]="options.value.floatLabel">
+        <input matInput placeholder="Name" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Typ">
+          <mat-option value="Einmalig">Einmalig</mat-option>
+          <mat-option value="Monatlich">Monatlich</mat-option>
+          <mat-option value="Jährlich">Jährlich</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Betrag">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Datum">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </form>
+  <button id="btn_back" mat-raised-button color="warn" routerLink="././">Zurück</button>
+  <button id="btn_save" mat-raised-button color="primary" routerLink="././">Speichern</button>
+</mat-card>
+</div>
+
+
+
