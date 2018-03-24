@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>Kategorie Konfiguration:</mat-card-title>
+  <mat-card-subtitle>Name der Kategorie</mat-card-subtitle>
+  <mat-chip-list class="mat-chip-list-stacked">
+    <mat-chip> Bezeichnung: Aldi</mat-chip>
+    <mat-chip> Kategorie: Sonstiges</mat-chip>
+    <mat-checkbox> Deaktiviert</mat-checkbox>
+    <mat-select [(value)]="selected">
+      <mat-option value="einnahmen">Einnahmen</mat-option>
+      <mat-option value="ausgaben">Ausgaben</mat-option>
+    </mat-select>
+
+  </mat-chip-list>
+  <br>
+  <button id="categoryBack" mat-raised-button color="primary" routerLink="././">Zurück</button>
+</mat-card>

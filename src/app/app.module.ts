@@ -11,13 +11,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule, MatCheckboxModule, MatCardModule, MatTableModule, MatPaginatorModule,
   MatSortModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatOptionModule, MatRadioModule,
   MatIconModule, MatDatepickerModule, MatNativeDateModule, MatChipsModule} from '@angular/material';
+import { CategoryDetailsComponent } from './category-details/category-details.component';
+import { CategoryConfigComponent } from './category-config/category-config.component';
+import { CategoryNewComponent } from './category-new/category-new.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BuchungDetailsComponent,
     BuchungComponent,
-    BuchungPageComponent
+    BuchungPageComponent,
+    CategoryDetailsComponent,
+    CategoryConfigComponent,
+    CategoryNewComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
