@@ -13,3 +13,6 @@ export class CategoryConfigComponent implements OnInit {
   }
 
 }
+export class SelectValueType {
+  selectedType = 'ausgaben';
+}

@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryNewComponent implements OnInit {
 
-  constructor() { }
+  constructor() {  }
 
   ngOnInit() {
+    SelectValueType();
   }
 
+}
+export class SelectValueType {
+  selectedType = 'ausgaben';
 }
