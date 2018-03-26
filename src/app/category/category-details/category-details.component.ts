@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
 import {SelectionModel} from '@angular/cdk/collections';
 
+/**
+ * @Author: Joshua Rammacher
+ */
 @Component({
   selector: 'app-category-details',
   templateUrl: './category-details.component.html',

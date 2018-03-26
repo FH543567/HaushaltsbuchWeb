@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * @Author: Joshua Rammacher
+ */
 @Component({
   selector: 'app-category-config',
   templateUrl: './category-config.component.html',

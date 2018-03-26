@@ -1,6 +1,6 @@
-import { CategoryConfigComponent} from './category-config/category-config.component';
-import { CategoryDetailsComponent} from './category-details/category-details.component';
-import { CategoryNewComponent } from './category-new/category-new.component';
+import { CategoryConfigComponent} from './category/category-config/category-config.component';
+import { CategoryDetailsComponent} from './category/category-details/category-details.component';
+import { CategoryNewComponent } from './category/category-new/category-new.component';
 import { OverviewComponent } from './overview/overview.component';
 import { BalanceComponent } from './balance/balance.component';
 import { ReportsComponent } from './reports/reports.component';
@@ -21,9 +21,9 @@ export const routes = [
     { path: 'entry', component: EntryPageComponent},
     { path: 'entry/details', component: EntryDetailsComponent},
     { path: 'entry/new', component: EntryNewComponent},
-    { path: 'CategoryConfig', component: CategoryConfigComponent},
-    { path: 'CategoryDetails', component: CategoryDetailsComponent},
-    { path: 'CategoryNew', component: CategoryNewComponent},
+    { path: 'category/config', component: CategoryConfigComponent},
+    { path: 'category/details', component: CategoryDetailsComponent},
+    { path: 'category/new', component: CategoryNewComponent},
     // nachfolgende von Jan-Michael
     { path: 'overview', component: OverviewComponent},
     { path: 'balance', component: BalanceComponent},
@@ -34,5 +34,5 @@ export const routes = [
     { path: 'book/new', component: BookNewComponent},
     { path: 'book/config', component: BookConfigComponent},
     // otherwise redirect to home
-    { path: '**', redirectTo: '/Home' }
+    { path: '**', redirectTo: '/home' }
 ];

@@ -10,9 +10,9 @@ import { MatButtonModule, MatCheckboxModule, MatCardModule, MatToolbarModule,
   MatOptionModule, MatTableModule, MatFormFieldModule, MatSidenavModule, MatListModule,
   MatDatepickerModule, MatNativeDateModule, MatSliderModule, MatStepperModule,
   MatChipsModule, MatButtonToggleModule, MatDialogModule, MatSortModule, MatPaginatorModule} from '@angular/material';
-import { CategoryDetailsComponent } from './category-details/category-details.component';
-import { CategoryConfigComponent } from './category-config/category-config.component';
-import { CategoryNewComponent } from './category-new/category-new.component';
+import { CategoryDetailsComponent } from './category/category-details/category-details.component';
+import { CategoryConfigComponent } from './category/category-config/category-config.component';
+import { CategoryNewComponent } from './category/category-new/category-new.component';
 import { BookDetailsComponent } from './book/book-details/book-details.component';
 import { BookNewComponent } from './book/book-new/book-new.component';
 import { BookConfigComponent } from './book/book-config/book-config.component';

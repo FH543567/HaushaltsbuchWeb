@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
+/**
+ * @Author: Joshua Rammacher
+ */
 @Component({
   selector: 'app-category-new',
   templateUrl: './category-new.component.html',
