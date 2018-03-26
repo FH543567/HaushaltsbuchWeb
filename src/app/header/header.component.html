@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row>
+  <span>
+    <img src="assets/img/logo.jpg" class="logo" routerLink="/home">
+  </span>
+  <div *ngIf="isLoggedIn">
+    <button mat-button routerLink="overview"><mat-icon>book</mat-icon>Übersicht</button>
+    <button mat-button routerLink="buchung-details"><mat-icon>assignment</mat-icon>Buchung</button>
+    <button mat-button routerLink="balance"><mat-icon>account_balance</mat-icon>Saldo</button>
+    <button mat-button routerLink="reports"><mat-icon>assessment</mat-icon>Berichte</button>
+  </div>
+
+
+    <span class="fill-remaining-space"></span>
+
+  <div *ngIf="isLoggedIn">
+  <mat-form-field>
+    <mat-select placeholder="Monat"><mat-option *ngFor="let month of months" [value]="month.value">{{month.viewValue}}</mat-option></mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Buch"><mat-option *ngFor="let book of books" [value]="book.value">{{book.viewValue}}</mat-option></mat-select>
+  </mat-form-field>
+    <!-- Buchmenue -->
+    <button mat-button [matMenuTriggerFor]="bookSettings"><mat-icon>settings</mat-icon></button>
+    <mat-menu #bookSettings="matMenu">
+      <button mat-menu-item routerLink="book/details">Buch Übersicht</button>
+      <button mat-menu-item routerLink="book/new">Neues Buch</button>
+      <button mat-menu-item routerLink="book/config">Buch Konfiguration</button>
+    </mat-menu>
+  </div>
+  <div>
+    <button mat-button [matMenuTriggerFor]="appMenu"><mat-icon>more_vert</mat-icon></button>
+    <mat-menu #appMenu="matMenu">
+      <button mat-menu-item routerLink="login" *ngIf="!isLoggedIn"><mat-icon>account_box</mat-icon>Login</button>
+      <button mat-menu-item (click)="logout()" *ngIf="isLoggedIn"><mat-icon>close</mat-icon>Logout</button>
+    </mat-menu>
+  </div>
+
+</mat-toolbar-row>
+</mat-toolbar>

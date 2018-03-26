@@ -12,7 +12,7 @@ export class CategoryDetailsComponent implements OnInit {
   constructor() {  }
 
   ngOnInit() {
-    TableSelectionExample();
+    // TableSelectionExample(); -------------DEAKTIVERT DAMIT KOMPILIERT WERDEN KANN!!!! JM
   }
 
 }

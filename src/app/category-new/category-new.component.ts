@@ -10,7 +10,7 @@ export class CategoryNewComponent implements OnInit {
   constructor() {  }
 
   ngOnInit() {
-    SelectValueType();
+    // SelectValueType();  -------------DEAKTIVERT DAMIT KOMPILIERT WERDEN KANN!!!! JM
   }
 
 }

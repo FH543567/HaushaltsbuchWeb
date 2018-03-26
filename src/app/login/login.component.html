@@ -1,0 +1,29 @@
+<div class="signin-content">
+  <mat-card>
+    <mat-card-content>
+      <span>
+        <img src="assets/img/logo.jpg" class="logo">
+      </span>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>Please login to continue</p>
+        <mat-input-container class="full-width-input">
+          <input matInput placeholder="E-Mail"
+                 formControlName="username">
+          <mat-error *ngIf="isFieldInvalid('username')">
+            Bitte geben Sie Ihre E-Mail-Adresse an.
+          </mat-error>
+        </mat-input-container>
+        <mat-input-container class="full-width-input">
+          <input matInput type="password" placeholder="Passwort"
+                 formControlName="password">
+          <mat-error *ngIf="isFieldInvalid('password')">
+            Bitte geben Sie Ihr Passwort ein.
+          </mat-error>
+        </mat-input-container>
+        <button mat-raised-button color="primary" type="submit">Login</button><span class="spacer"></span>
+        <button mat-raised-button routerLink="/registration">Registration</button><span class="spacer"></span>
+      </form>
+      <mat-hint *ngIf="this.isError === true">Username and/or password wrong!</mat-hint>
+    </mat-card-content>
+  </mat-card>
+</div>

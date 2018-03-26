@@ -1,0 +1,24 @@
+<div class="content">
+  <mat-card>
+    <mat-card-header>Buch Konfiguration</mat-card-header>
+    <mat-card-subtitle> </mat-card-subtitle>
+    <mat-card-content>
+      <mat-card>
+        <mat-card-content>
+          <mat-card-header>Benutzer hinzufügen</mat-card-header>
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <mat-input-container class="full-width-input">
+              <input matInput placeholder="Benutzer E-Mail-Adresse"
+                     formControlName="name">
+              <mat-error *ngIf="isFieldInvalid('name')">
+                Bitte geben Sie einen gültigen Benutzer an.
+              </mat-error>
+            </mat-input-container>
+            <button mat-raised-button color="primary" type="submit">Benutzer hinzufügen</button><span class="spacer"></span>
+          </form>
+        </mat-card-content>
+      </mat-card>
+      <button mat-raised-button color="warn">Buch löschen</button><span class="spacer"></span>
+    </mat-card-content>
+  </mat-card>
+</div>

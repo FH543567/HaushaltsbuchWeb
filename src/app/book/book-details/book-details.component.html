@@ -1,0 +1,11 @@
+<mat-card class="content">
+  <mat-card-title>Buch Übersicht</mat-card-title>
+  <mat-card-content>
+    <mat-form-field>
+      <mat-select placeholder="Jahr" ><mat-option *ngFor="let year of years" [value]="year.value">{{year.viewValue}}</mat-option></mat-select>
+    </mat-form-field>
+    <mat-list>
+      <mat-list-item *ngFor="let month of months"> {{month.viewValue}}</mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
