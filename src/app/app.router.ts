@@ -1,6 +1,3 @@
-import { BuchungDetailsComponent } from './buchung-details/buchung-details.component';
-import { BuchungComponent } from './buchung/buchung.component';
-import { BuchungPageComponent } from './buchung-page/buchung-page.component';
 import { CategoryConfigComponent} from './category-config/category-config.component';
 import { CategoryDetailsComponent} from './category-details/category-details.component';
 import { CategoryNewComponent } from './category-new/category-new.component';
@@ -13,19 +10,22 @@ import { AppComponent } from './app.component';
 import {BookDetailsComponent} from './book/book-details/book-details.component';
 import {BookNewComponent} from './book/book-new/book-new.component';
 import {BookConfigComponent} from './book/book-config/book-config.component';
+import {EntryPageComponent} from './entry/entry-page/entry-page.component';
+import {EntryDetailsComponent} from './entry/entry-details/entry-details.component';
+import {logging} from 'selenium-webdriver';
+import {EntryNewComponent} from './entry/entry-new/entry-new.component';
 
 export const routes = [
-    { path: '', redirectTo: '/Home', pathMatch: 'full'},
-    { path: 'Home', component: BuchungPageComponent },
-    { path: 'Buchungen', component: BuchungPageComponent},
-    { path: 'Buchung/Details', component: BuchungDetailsComponent},
-    { path: 'Buchung/Erstellen', component: BuchungComponent},
+    { path: '', redirectTo: '/home', pathMatch: 'full'},
+    { path: 'home', component: EntryPageComponent },
+    { path: 'entry', component: EntryPageComponent},
+    { path: 'entry/details', component: EntryDetailsComponent},
+    { path: 'entry/new', component: EntryNewComponent},
     { path: 'CategoryConfig', component: CategoryConfigComponent},
     { path: 'CategoryDetails', component: CategoryDetailsComponent},
     { path: 'CategoryNew', component: CategoryNewComponent},
     // nachfolgende von Jan-Michael
     { path: 'overview', component: OverviewComponent},
-    { path: 'buchung-details', component: BuchungComponent},
     { path: 'balance', component: BalanceComponent},
     { path: 'reports', component: ReportsComponent},
     { path: 'login', component: LoginComponent},

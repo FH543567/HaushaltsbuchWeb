@@ -1,6 +1,6 @@
 <div class="wrapper">
-<mat-card>
-  <h1>Neue Buchung</h1>
+  <mat-card>
+    <mat-card-title>Neue Buchung</mat-card-title>
     <form class="example-container" [formGroup]="options">
       <mat-form-field
         [hideRequiredMarker]="options.value.hideRequired"
@@ -26,10 +26,9 @@
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
     </form>
-  <button id="btn_back" mat-raised-button color="warn" routerLink="././">Zurück</button>
-  <button id="btn_save" mat-raised-button color="primary" routerLink="././">Speichern</button>
-</mat-card>
+    <button id="btn_back" mat-raised-button color="warn" routerLink="/entry">Zurück</button>
+    <button id="btn_save" mat-raised-button color="primary" routerLink="/entry">Speichern</button>
+  </mat-card>
 </div>
-
 
 

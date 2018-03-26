@@ -2,9 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { BuchungDetailsComponent } from './buchung-details/buchung-details.component';
-import { BuchungComponent } from './buchung/buchung.component';
-import { BuchungPageComponent } from './buchung-page/buchung-page.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -25,13 +22,13 @@ import { OverviewComponent } from './overview/overview.component';
 import { BalanceComponent } from './balance/balance.component';
 import { ReportsComponent } from './reports/reports.component';
 import { LoginComponent } from './login/login.component';
+import { EntryPageComponent } from './entry/entry-page/entry-page.component';
+import { EntryNewComponent } from './entry/entry-new/entry-new.component';
+import { EntryDetailsComponent } from './entry/entry-details/entry-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BuchungDetailsComponent,
-    BuchungComponent,
-    BuchungPageComponent,
     CategoryDetailsComponent,
     CategoryConfigComponent,
     CategoryNewComponent,
@@ -43,7 +40,10 @@ import { LoginComponent } from './login/login.component';
     OverviewComponent,
     BalanceComponent,
     ReportsComponent,
-    LoginComponent
+    LoginComponent,
+    EntryPageComponent,
+    EntryNewComponent,
+    EntryDetailsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

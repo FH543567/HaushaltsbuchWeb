@@ -1,11 +1,12 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
+import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+
 @Component({
-  selector: 'app-buchung-page',
-  templateUrl: './buchung-page.component.html',
-  styleUrls: ['./buchung-page.component.scss']
+  selector: 'app-entry-page',
+  templateUrl: './entry-page.component.html',
+  styleUrls: ['./entry-page.component.scss']
 })
-export class BuchungPageComponent implements OnInit {
+export class EntryPageComponent implements OnInit {
   displayedColumns = ['id', 'Name', 'Datum', 'Betrag', 'X'];
   dataSource: any;
   @ViewChild(MatSort) sort: MatSort;

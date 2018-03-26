@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+
 @Component({
-  selector: 'app-buchung',
-  templateUrl: './buchung.component.html',
-  styleUrls: ['./buchung.component.scss']
+  selector: 'app-entry-new',
+  templateUrl: './entry-new.component.html',
+  styleUrls: ['./entry-new.component.scss']
 })
-export class BuchungComponent implements OnInit {
+export class EntryNewComponent implements OnInit {
   options: FormGroup;
   date: Date;
-  constructor(
-    private fb: FormBuilder
-  ) {
+
+  constructor(private fb: FormBuilder) {
     this.options = fb.group({
       hideRequired: false,
       floatLabel: 'auto',
@@ -25,5 +25,4 @@ export class BuchungComponent implements OnInit {
     if (this.options.valid) {
     }
   }
-
 }
