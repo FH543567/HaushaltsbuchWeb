@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * @Author: Joshua Rammacher
+ */
 @Component({
   selector: 'app-overview',
   templateUrl: './overview.component.html',

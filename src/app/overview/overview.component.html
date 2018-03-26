@@ -1,3 +1,31 @@
-<p>
-  overview works!
-</p>
+<mat-card>
+  <button mat-raised-button color="primary" routerLink="/category/new">Kategorie hinzufügen</button><span class="spacer"></span>
+  <mat-list>
+    <mat-list-item>
+      <mat-chip-list>
+        <mat-chip color="primary" selected="true" routerLink="/category/details">Kategory 1</mat-chip>
+        <mat-chip>Budget 500€</mat-chip>
+        <mat-chip>Verbraucht 250€</mat-chip>
+      </mat-chip-list>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <mat-chip-list>
+        <mat-chip color="accent" selected="true">Kategory 2</mat-chip>
+        <mat-chip>Budget 300€</mat-chip>
+        <mat-chip>Verbraucht 350€</mat-chip>
+      </mat-chip-list>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</mat-card>
+
+<!--
+
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>1</mat-grid-tile>
+        <mat-grid-tile>2</mat-grid-tile>
+        <mat-grid-tile>3</mat-grid-tile>
+        <mat-grid-tile>4</mat-grid-tile>
+      </mat-grid-list>
+-->
