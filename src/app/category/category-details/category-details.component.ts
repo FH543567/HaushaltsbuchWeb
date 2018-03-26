@@ -12,14 +12,6 @@ import {SelectionModel} from '@angular/cdk/collections';
 })
 export class CategoryDetailsComponent implements OnInit {
 
-  constructor() {  }
-
-  ngOnInit() {
-    // TableSelectionExample(); -------------DEAKTIVERT DAMIT KOMPILIERT WERDEN KANN!!!! JM
-  }
-
-}
-export class TableSelectionExample {
   displayedColumns = ['select', 'position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
   selection = new SelectionModel<Element>(true, []);
@@ -36,6 +28,11 @@ export class TableSelectionExample {
     this.isAllSelected() ?
       this.selection.clear() :
       this.dataSource.data.forEach(row => this.selection.select(row));
+  }
+  constructor() {  }
+
+  ngOnInit() {
+    // TableSelectionExample(); -------------DEAKTIVERT DAMIT KOMPILIERT WERDEN KANN!!!! JM
   }
 }
 
